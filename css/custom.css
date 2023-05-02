@@ -1,6 +1,16 @@
+/*
+  HOME SCREEN IMAGE CUSTOM
+*/
+
 .imageH3 {
   color: #fff;
+  font-weight: 300;
+  margin-bottom: 1.5em;
 }
+
+.container.heading-2{
+  background-color: pink;
+} 
 
 .site-navigation {
   align-items: center;
@@ -11,4 +21,8 @@
 
 .home-logo{
   height: 75px;
+}
+
+.home-video-link{
+  margin-bottom: 3em;
 }
