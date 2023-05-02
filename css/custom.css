@@ -1,0 +1,14 @@
+.imageH3 {
+  color: #fff;
+}
+
+.site-navigation {
+  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+.home-logo{
+  height: 75px;
+}
