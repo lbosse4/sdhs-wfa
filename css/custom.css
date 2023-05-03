@@ -1,16 +1,26 @@
 /*
-  HOME SCREEN IMAGE CUSTOM
+  VARIABLES
 */
+:root {
+  --main-orange: #e8702a;
+  --main-teal: #05a7b6;
+  --main-yellow: #febf50;
+}
+
+
+/*
+  HOME SCREEN IMAGE SECTION CUSTOM
+*/
+
+.site-menu li a{
+  font-weight: 400;
+}
 
 .imageH3 {
   color: #fff;
   font-weight: 300;
-  margin-bottom: 1.5em;
+  margin-bottom: .5em;
 }
-
-.container.heading-2{
-  background-color: pink;
-} 
 
 .site-navigation {
   align-items: center;
@@ -25,4 +35,105 @@
 
 .home-video-link{
   margin-bottom: 3em;
+}
+
+.hero-p{
+  color: #fff;
+  font-weight: 200;
+}
+
+.hero-link{
+  color: #fff;
+  font-size: 18px;
+}
+
+.hero-link:hover{
+  font-weight: 400;
+}
+
+/*
+  HOME SCREEN CARDS CUSTOM
+*/
+.card-img{
+  height: 15em;
+  object-fit: cover;
+}
+
+/*
+ CONTACT
+*/
+.form-contact-container{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.form-contact-container div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+body.form-contact{
+  color: #000;
+}
+
+input.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000;
+  opacity: 1;
+  /* Firefox */
+}
+
+input.form-control.form-contact:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #000;
+}
+
+input.form-control.form-contact::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #000;
+}
+
+.form-contact .form-control{
+  border-bottom: 1px solid #000 !important;
+}
+
+/*
+  SHARED
+*/
+
+.bg-orange{
+  background-color: var(--main-orange);
+}
+
+.bg-teal{
+  background-color: var(--main-teal);
+}
+
+.bg-yellow{
+  background-color: var(--main-yellow);
+}
+
+.bg-yellow p{
+  color: #000;
+}
+
+.card {
+  border-radius: 12;
+  object-fit: cover;
+}
+
+.site-footer{
+  padding: 40px 0;
+}
+
+a.mt-2{
+  margin-top: 0 !important;
+}
+
+.btn.btn-black{
+  border-radius: 6px;
+}
+
+.m-md-5{
+  margin: 3rem 0 !important;
 }

@@ -35,6 +35,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --main-orange: #e8702a;
+  --main-teal: #05a7b6;
   --bs-font-sans-serif: "Playfair Display", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)); }
@@ -9515,7 +9517,8 @@ a {
 
 .service {
   overflow: hidden;
-  border-radius: 0px;
+  border-radius: 12px;
+  border-width: 0;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
@@ -9565,15 +9568,16 @@ a {
     width: 100%;
     content: "";
     height: 1px;
-    background-color: #ccc;
+    background-color: var(--main-orange);
     bottom: 0;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
+    -webkit-transition: .3s all ease-out;
+    -o-transition: .3s all ease-out;
+    transition: .3s all ease-out;
     left: 0; }
   .more:after {
     width: 0;
-    background-color: #000; }
+    height: 2px;
+    background-color: var(--main-orange); }
   .more:hover:after {
     width: 100%; }
 
