@@ -8,8 +8,8 @@ class Carousel {
     this.board = element
 
     // add first two cards programmatically
-    this.push()
-    this.push()
+    this.push("./images/nala.jpg")
+    this.push("./images/zoey-cropped.jpg")
 
     // handle gestures
     this.handle()
@@ -192,14 +192,14 @@ class Carousel {
 
   }
 
-  push() {
+  push(f) {
 
     let card = document.createElement('div')
 
     card.classList.add('card')
 
     card.style.backgroundImage =
-      "url('https://picsum.photos/320/320/?random=" + Math.round(Math.random() * 1000000) + "')"
+      "url("+ f + ")"; 
 
     this.board.insertBefore(card, this.board.firstChild)
 
