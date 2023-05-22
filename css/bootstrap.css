@@ -6251,7 +6251,7 @@ progress {
   pointer-events: auto !important; }
 
 .rounded {
-  border-radius: 0.25rem !important; }
+  border-radius: 0.5rem !important; }
 
 .rounded-sm {
   border-radius: 0.2rem !important; }

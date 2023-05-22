@@ -7,7 +7,6 @@
   --main-yellow: #febf50;
 }
 
-
 /*
   HOME SCREEN IMAGE SECTION CUSTOM
 */
@@ -57,6 +56,14 @@
 .card-img{
   height: 15em;
   object-fit: cover;
+}
+
+/*
+  HOME MATCH AD
+*/
+
+.index-match-ad{
+  color: black;
 }
 
 /*
@@ -130,8 +137,20 @@ a.mt-2{
   margin-top: 0 !important;
 }
 
-.btn.btn-black{
+.btn{
   border-radius: 6px;
+  background-color: white;
+  color: var(--main-teal);
+}
+
+.site-nav{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  /*position: sticky; DEAL WITH THIS LAST*/
+}
+
+.subheading {
+  color: black;
 }
 
 .m-md-5{
