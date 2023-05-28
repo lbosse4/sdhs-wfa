@@ -8,6 +8,17 @@
 }
 
 /*
+  SHARED
+*/
+h1{
+  font-family: dazzle-unicase, sans-serif !important;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.grid{ display: grid;}
+
+/*
   HOME SCREEN IMAGE SECTION CUSTOM
 */
 
@@ -63,7 +74,7 @@
 */
 
 .index-match-ad{
-  color: black;
+  color: white;
 }
 
 /*
@@ -108,6 +119,11 @@ input.form-control.form-contact::-ms-input-placeholder {
   SHARED
 */
 
+h2{
+  color: white;
+  font-family: dazzle-unicase, sans-serif !important;
+}
+
 .bg-orange{
   background-color: var(--main-orange);
 }
@@ -150,7 +166,7 @@ a.mt-2{
 }
 
 .subheading {
-  color: black;
+  color: white;
 }
 
 .m-md-5{
@@ -158,5 +174,68 @@ a.mt-2{
 }
 
 .mb-5{
+  color: white;
+}
+
+.more-info-section p{
   color: black;
+}
+
+.section-contact h2{
+  color: black;
+}
+
+
+/*
+  ABOUT SCREEN CUSTOM
+*/
+.about-hero h1{
+  font-size: calc(3rem + 1.5vw);
+}
+
+.about-container{
+  width: 65%;
+  text-align: center;
+}
+
+/*
+  MISSION SCREEN CUSTOM
+*/
+.mission-container{
+  width: 100vw;
+  height: 90vh;
+  min-height: 700px;
+  top: 0;
+  overflow: visible;
+}
+
+.mission-container h1, 
+.mission-container h3{
+
+  padding: 0 40px;
+}
+
+.mission-container svg{
+  margin-top: 50%;
+  width: 100vw;
+  height: 600px;
+  position: absolute;
+}
+.mission-diagonals{
+  margin-top: 10%;
+  -ms-transform: rotate(-70deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-70deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-70deg);
+  overflow: visible;
+}
+
+.mission-text-container{
+ margin-top: 65%;
+ height: 550;
+}
+
+.mission-footer-padding {
+  padding: 15vw 0 40px !important;
 }
