@@ -241,6 +241,7 @@ a.mt-2{
   left: -10vw;
 }
 
+/* mission dog images */
 .mission-img-container{
   position: absolute;
   left: 40px;
@@ -264,6 +265,36 @@ a.mt-2{
   margin-top: -15vh;
 }
 
+/* mission like images */
+.mission-img-like-container{
+  right: 40px;
+}
+
+.mission-img-like-container img{
+  margin-top: -6vh;
+  margin-right: 6vw;
+}
+
+.mission-img-like-container-reverse {
+  left: 90px;
+}
+
+.mission-img-like-container-reverse img {
+  margin-top: -12vh;
+  margin-right: 6vw;
+}
+
+.mission-img-like-container img,
+.mission-img-like-container-reverse img{
+  width: 15vw;
+}
+
+.mission-img-like-container,
+.mission-img-like-container-reverse  {
+  position: absolute;
+  visibility: hidden;
+}
+
 .mission-main {
   position: relative;
   height: 550px;
@@ -282,10 +313,8 @@ a.mt-2{
 }
 
 @media (min-width: 992px) {
-  .mission-container img {
-    visibility: visible;
-  }
-
+  /* mission dog images */
+  .mission-container img,
   .mission-container-reverse img{
     visibility: visible;
   }
@@ -297,10 +326,64 @@ a.mt-2{
   .mission-container-reverse .mission-main{
     margin: 40px 20vw 40px 45px;
   }
+
+  /* mission like images */
+    .mission-img-like-container,
+    .mission-img-like-container-reverse {
+    visibility: visible;
+  }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+}
 
 @media (min-width: 1400px) {
+  .mission-img-like-container img,
+  .mission-img-like-container-reverse img {
+    width: 12vw;
+  }
 
+  .mission-img-like-container-reverse img {
+    margin-left: 6vw;
+  }
+
+  .mission-img-container{
+    left: 8vw;
+  }
+
+  .mission-reverse-img-container{
+    right: 200px;
+  }
+
+  .mission-img-container img {
+    width: 27vw;
+    margin-top: -20vh;
+  }
+
+  .mission-reverse-img-container img{
+    margin-top: -20vh;
+  }
+
+  .mission-reverse-img-container{
+    width: 45vw;
+    right: 18vw;
+    margin-top: -11vh;
+  }
+
+  .mission-main h1{
+    font-size: 3.5rem !important;
+  }
+
+  .mission-container .mission-main{
+    margin: 40px 8vw 40px 30vw;
+  }
+  .mission-container-reverse .mission-main {
+    margin: 0px 30vw 40px 8vw;
+  }
+  
+  .mission-container {
+    height: 90vh;
+    margin-top: 35vh;
+  }
 }
