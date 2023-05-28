@@ -201,27 +201,26 @@ a.mt-2{
 /*
   MISSION SCREEN CUSTOM
 */
-.mission-container{
+.OLD-mission-container{
   width: 100vw;
-  height: 90vh;
+  height: 85vh;
   min-height: 700px;
   top: 0;
   overflow: visible;
 }
 
-.mission-container h1, 
-.mission-container h3{
-
+.OLD-mission-container h1, 
+.OLD-mission-container h3{
   padding: 0 40px;
 }
 
-.mission-container svg{
+.OLD-mission-container svg{
   margin-top: 50%;
   width: 100vw;
   height: 600px;
   position: absolute;
 }
-.mission-diagonals{
+.OLD-mission-diagonals{
   margin-top: 10%;
   -ms-transform: rotate(-70deg);
   /* IE 9 */
@@ -231,11 +230,102 @@ a.mt-2{
   overflow: visible;
 }
 
-.mission-text-container{
- margin-top: 65%;
+.OLD-mission-text-container{
+ margin-top: 70%;
  height: 550;
 }
 
-.mission-footer-padding {
-  padding: 15vw 0 40px !important;
+/* TESTING */
+.test-container {
+  width: 100vw;
+  height: 60vh;
+  margin-top: 30vh;
+  padding: 0px;
+  min-height: 650px;
+}
+
+.test-container-reverse{
+    width: 100vw;
+    height: 60vh;
+    margin-top: 40vh;
+    padding: 0px;
+    min-height: 650px;
+}
+
+.test-container h1, 
+.test-container h3, 
+.test-container-reverse h1,
+.test-container-reverse h3 {
+  color: white;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+}
+
+.test-container svg,
+.test-container-reverse svg { 
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  min-height: 650px;
+  overflow: visible;
+  left: 0;
+}
+
+.test-container-reverse svg {
+  left: -10vw;
+}
+
+.test-container img{
+  position: absolute;
+  left: 40px;
+  top: 20vh;
+  width: 35vw;
+  visibility: hidden;
+}
+
+.test-main {
+  position: relative;
+  height: 550px;
+  margin: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main:before {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 140px;
+  margin: auto;
+  z-index: -1;
+  border: 5px solid lightgray;
+  left: 40px;
+}
+
+/* mission media queries */
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+  .mission-container svg {
+    margin-top: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .heading-2 {
+    font-size: 60px;
+  }
+
+  .mission-text-container {
+    margin-top: 60%;
+  }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {
+
 }
