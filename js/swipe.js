@@ -9,7 +9,10 @@ class Carousel {
 
     // add first two cards programmatically
     this.push("./images/nala.jpg")
-    this.push("./images/zoey-cropped.jpg")
+    this.push("./images/zoey.jpg")
+    this.push("./images/todd.jpg")
+    this.push("./images/roscoe.jpg")
+    this.push("./images/hachi.jpg")
 
     // handle gestures
     this.handle()
