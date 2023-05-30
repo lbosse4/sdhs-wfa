@@ -134,6 +134,19 @@ h2{
 
 .bg-teal{
   background-color: var(--main-teal);
+  color: white;
+}
+
+.bg-teal h2,
+.bg-teal h3, 
+.bg-teal h4,
+.bg-teal a {
+  color: white;
+}
+
+.bg-light h2, 
+.bg-light .subheading{
+  color: black;
 }
 
 .bg-yellow{
