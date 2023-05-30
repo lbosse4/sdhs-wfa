@@ -34,12 +34,38 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/swipe-card.css">
+  <link rel="stylesheet" href="css/modal.css">
 
   <title>Walk for Animals | San Diego Humane Society</title>
 </head>
 
 <body>
-
+  <!-- The Modal -->
+  <div id="myModal" class="modal" data-aos="fade-up"> 
+  
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-close-container">
+        <span class="close">&times;</span>
+      </div>
+        <div class="row">
+          <div class="col-lg-6 pe-lg-5 match-explain modal-details" data-aos="fade-up">
+            <span class="subheading d-inline-block mb-2">Look no further</span>
+            <h2 class="mb-4">It's a match!</h2>
+            <p class="mb-5"><span id="dog-name-span">Nala</span> is available for the walk for animals event. <span id="dog-pronoun-capital-span">She</span> told us <span id="dog-pronoun-lower-span">she</span>'s so excited to meet you, and is so ready for the walk! The Humane Society takes very special care of all of our animals,
+               so in order to take her out during the event, we require some standard fostering paperwork.
+            </p>
+            <div class="modal-btn-container">
+              <p data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary-outline white me-4">Register to foster!</a></p>
+            </div>
+          </div>
+          <div class="col-lg-6 board-section modal-match-dog-img-container">
+            <img src="images/nala.jpg" id="matched-dog-profile" class="modal-profile" alt="matched profile">
+          </div>
+        </div>
+    </div>
+  
+  </div>
   <div class="site-mobile-menu site-navbar-target">
     <div class="site-mobile-menu-header">
       <div class="site-mobile-menu-close">
@@ -106,9 +132,6 @@
             </div>
           </div>
         </div>
-        <p data-aos="fade-up" class="d-flex home-video-link" data-aos-delay="200"><a href="match.html"
-            class="glightbox d-inline-flex align-items-center"><span class="hero-link">Learn more this year's matching
-              event</span></a></p>
       </div>
     </div>
   </div>
@@ -200,6 +223,25 @@
   <script src="js/custom.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   <script src="js/swipe.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>

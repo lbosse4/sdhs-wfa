@@ -1,0 +1,134 @@
+/*
+  VARIABLES
+*/
+:root {
+  --main-orange: #e8702a;
+  --main-teal: #05a7b6;
+  --main-yellow: #febf50;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  padding: 20px;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  padding: 20px;
+  border-radius: 16px;
+  animation: fadein .35s;
+}
+
+.modal-details{
+  margin: auto 0;
+}
+
+.modal-details .subheading,
+.modal-details h2, 
+.modal-details p {
+  color: var(--main-teal) !important;
+}
+
+.modal-close-container{
+  width: 100%;
+}
+
+.modal-profile{
+  width: 375px;
+  border: 12px solid var(--main-yellow);
+  border-radius: 12px;
+}
+
+.modal-match-dog-img-container{
+  
+}
+
+.modal-profile:before{
+
+}
+
+.modal-btn-container{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.modal-content .btn{
+  background-color: var(--main-orange) !important;
+  color: white !important;
+  margin-bottom: 30px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .modal {
+    padding: 5vh 5vw;
+  }
+
+  .modal-content {
+    padding: 5vw;
+  }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    padding: 125px 225px;
+  }
+
+  .modal-content {
+    padding: 20px 40px 32px 80px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .modal {
+    padding: 8vh 15vw;
+  }
+
+  .modal-content {
+    padding: 12px 40px 32px 100px;
+  }
+}

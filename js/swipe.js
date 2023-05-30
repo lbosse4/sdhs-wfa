@@ -1,18 +1,68 @@
 /* LikeCarousel (c) 2019 Simone P.M. github.com/simonepm - Licensed MIT */
 /* https://www.cssscript.com/card-carousel-tinder/ */
 
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+var dogs = {
+  0 :{
+    "name": "Nala",
+    "pronounCap": "She",
+    "pronounLower": "she",
+    "profFilePath": "./images/nala.jpg"
+  },
+  1: {
+    "name": "Todd",
+    "pronounCap": "He",
+    "pronounLower": "he",
+    "profFilePath": "./images/todd.jpg"
+  }, 
+  2: {
+    "name": "Zoey",
+    "pronounCap": "She",
+    "pronounLower": "she",
+    "profFilePath": "./images/zoey.jpg"
+  },
+  3: {
+    "name": "Roscoe",
+    "pronounCap": "He",
+    "pronounLower": "he",
+    "profFilePath": "./images/roscoe.jpg"
+  },
+  4: {
+    "name": "Hachi",
+    "pronounCap": "He",
+    "pronounLower": "he",
+    "profFilePath": "./images/hachi.jpg"
+  },
+}
+
 class Carousel {
 
   constructor(element) {
 
     this.board = element
 
-    // add first two cards programmatically
-    this.push("./images/nala.jpg")
-    this.push("./images/zoey.jpg")
-    this.push("./images/todd.jpg")
-    this.push("./images/roscoe.jpg")
-    this.push("./images/hachi.jpg")
+    this.push(0, "./images/nala.jpg")
+    this.push(1, "./images/todd.jpg") 
+    this.push(2, "./images/zoey.jpg")
+    this.push(3, "./images/roscoe.jpg")
+    this.push(4, "./images/hachi.jpg")
 
     // handle gestures
     this.handle()
@@ -181,6 +231,14 @@ class Carousel {
           this.handle()
         }, 200)
 
+        if(dirX == 1){
+          modal.style.display = "grid";
+          document.getElementById("dog-name-span").textContent = dogs[this.topCard.id].name;
+          document.getElementById("dog-pronoun-capital-span").textContent = dogs[this.topCard.id].pronounCap;
+          document.getElementById("dog-pronoun-lower-span").textContent = dogs[this.topCard.id].pronounLower;
+          document.getElementById("matched-dog-profile").src = dogs[this.topCard.id].profFilePath
+        }
+
       } else {
 
         // reset cards position and size
@@ -195,9 +253,10 @@ class Carousel {
 
   }
 
-  push(f) {
+  push(idx, f) {
 
     let card = document.createElement('div')
+    card.setAttribute("id", idx); 
 
     card.classList.add('card')
 
