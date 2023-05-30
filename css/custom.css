@@ -196,7 +196,35 @@ a.mt-2{
   EVENT SCREEN CUSTOM
 */
 
+/*
+  FAQ SCREEN CUSTOM
+*/
+.faq-match-link{
+  font-weight: 700;
+}
 
+/*
+  VOLUNTEER SCREEN CUSTOM
+*/
+.more-volunteer-section{
+  padding-top: 40px !important;  
+}
+
+.more-volunteer-section h3,
+.more-volunteer-section p{
+  color: white !important;
+}
+
+.wfa-volunteer-info h2,
+.wfa-volunteer-info .subheading,
+.wfa-volunteer-info p {
+  color: black !important;
+}
+
+.wfa-volunteer-info .btn{
+  background-color: var(--main-orange);
+  color: white !important;
+}
 
 /*
   ABOUT SCREEN CUSTOM
