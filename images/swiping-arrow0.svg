@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.9 76.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #00a7b6;
+        font-family: DazzleUnicase-Bold, 'Dazzle Unicase';
+        font-size: 9px;
+        font-weight: 700;
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-4 {
+        letter-spacing: .01em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-7 {
+        fill: none;
+        stroke: #febf50;
+        stroke-miterlimit: 10;
+        stroke-width: .94px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m6.19,16.47L.51,38.95s5.74,4.71,11.22,7.31,7.5,4.11,20.37,6.57c12.88,2.46,38.67.44,38.67.44l.06,10.52,38.87-24.23-39.29-22.4.27,12.2s-18.23,3.22-37.27-.75c-8.9-1.86-20.86-5.14-27.22-12.15Z"/>
+  <path class="cls-7" d="m9.2,19.54l-5.68,22.48s5.74,4.71,11.22,7.31,7.5,4.11,20.37,6.57c12.88,2.46,38.67.44,38.67.44l.06,10.52,38.87-24.23-39.29-22.4.27,12.2s-18.23,3.22-37.27-.75c-8.9-1.86-20.86-5.14-27.22-12.15Z"/>
+  <text class="cls-2" transform="translate(16.87 44.35)"><tspan class="cls-5" x="0" y="0">S</tspan><tspan class="cls-6" x="5.54" y="0">t</tspan><tspan x="9.87" y="0">a</tspan><tspan class="cls-3" x="16.89" y="0">r</tspan><tspan x="22.8" y="0">t </tspan><tspan class="cls-4" x="30.2" y="0">s</tspan><tspan x="34.06" y="0">wiping!</tspan></text>
+</svg>
