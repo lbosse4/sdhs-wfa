@@ -208,6 +208,13 @@ a.mt-2{
 /*
   EVENT SCREEN CUSTOM
 */
+.bg-teal .more{
+  color: black;
+}
+
+.sponsor-box img{
+  padding: 20px 0 40px
+}
 
 /*
   FAQ SCREEN CUSTOM
