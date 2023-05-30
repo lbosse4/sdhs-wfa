@@ -111,11 +111,16 @@
 
 @media (min-width: 992px) {
   .match-explain {
-    margin: 100px 0;
+    margin: 200px 0 0;
   }
 
   .arrow-container {
     height: 150px;
+  }
+
+  .matching-buttons-container{
+    width: 115%;
+    padding: 0;
   }
 
   .matching-section {
