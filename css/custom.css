@@ -94,6 +94,10 @@ body.form-contact{
   color: #000;
 }
 
+.section-contact .btn{
+  color:white !important;
+}
+
 input.form-control::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #000;
@@ -156,7 +160,7 @@ a.mt-2{
 .btn{
   border-radius: 6px;
   background-color: white;
-  color: var(--main-teal);
+  color: var(--main-teal) !important;
 }
 
 .site-nav{
@@ -177,13 +181,21 @@ a.mt-2{
   color: white;
 }
 
-.more-info-section p{
+.more-info-section p,
+.more-info-section span,
+.more-info-section h2{
   color: black;
 }
 
-.section-contact h2{
+.section-contact h2,
+.section-contact .form-control::placeholder{
   color: black;
 }
+
+/*
+  EVENT SCREEN CUSTOM
+*/
+
 
 
 /*
