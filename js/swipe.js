@@ -24,30 +24,35 @@ var dogs = {
     "name": "Nala",
     "pronounCap": "She",
     "pronounLower": "she",
+    "thirdPersonLower": "her",
     "profFilePath": "./images/nala.jpg"
   },
   1: {
     "name": "Todd",
     "pronounCap": "He",
     "pronounLower": "he",
+    "thirdPersonLower": "him",
     "profFilePath": "./images/todd.jpg"
   }, 
   2: {
     "name": "Zoey",
     "pronounCap": "She",
     "pronounLower": "she",
+    "thirdPersonLower": "her",
     "profFilePath": "./images/zoey.jpg"
   },
   3: {
     "name": "Roscoe",
     "pronounCap": "He",
     "pronounLower": "he",
+    "thirdPersonLower": "him",
     "profFilePath": "./images/roscoe.jpg"
   },
   4: {
     "name": "Hachi",
     "pronounCap": "He",
     "pronounLower": "he",
+    "thirdPersonLower": "him",
     "profFilePath": "./images/hachi.jpg"
   },
 }
@@ -236,7 +241,8 @@ class Carousel {
           document.getElementById("dog-name-span").textContent = dogs[this.topCard.id].name;
           document.getElementById("dog-pronoun-capital-span").textContent = dogs[this.topCard.id].pronounCap;
           document.getElementById("dog-pronoun-lower-span").textContent = dogs[this.topCard.id].pronounLower;
-          document.getElementById("matched-dog-profile").src = dogs[this.topCard.id].profFilePath
+          document.getElementById("matched-dog-profile").src = dogs[this.topCard.id].profFilePath;
+          document.getElementById("dog-third-person-lower-span").textContent = dogs[this.topCard.id].thirdPersonLower;
         }
 
       } else {
